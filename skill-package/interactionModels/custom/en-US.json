@@ -1,0 +1,72 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "ai",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "ChatGPTIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "please {question}",
+            "what {question}",
+            "where {question}",
+            "who {question}",
+            "tell {question}",
+            "generate {question}",
+            "explain {question}",
+            "how {question}",
+            "when {question}",
+            "why {question}",
+            "if {question}",
+            "should {question}",
+            "will {question}",
+            "would {question}",
+            "could {question}",
+            "advise {question}",
+            "tell {question}",
+            "define {question}",
+            "discuss {question}",
+            "pick {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTSlackHandler",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "send {question}",
+            "message {question}",
+            "slack {question}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  }
+}
+  

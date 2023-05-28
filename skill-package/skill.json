@@ -1,0 +1,26 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Alexa with ChatGPT Queries",
+          "examplePhrases": [
+            "Alexa open ai",
+            "Generate a list of unique names for a pet horse with a red mane",
+            "Slack me the top restaurants in Belfast"
+          ],
+          "name": "alexa-with-chatgpt",
+          "description": "Integrates Alexa with ChatGPT for speech driven AI queries",
+          "keywords": ["ChatGPT","AI","Slack"],
+          "smallIconUri": "file://assets/smallIcon.png",
+          "largeIconUri": "file://assets/largeIcon.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "distributionMode": "PRIVATE",
+      "testingInstructions": "Sample Testing Instructions.",
+      "distributionCountries": []
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,11 @@
+/lambda/.env
+/.env
+# ASK CLI
+.ask/
+.ask-deployed/
+.ask-default/
+.ask-node-debugger/
+ask-states.json
+.ask-config
+.idea
+venv
