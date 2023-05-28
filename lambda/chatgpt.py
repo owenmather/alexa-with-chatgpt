@@ -12,7 +12,6 @@ from ask_sdk_model import Response, IntentRequest
 import os
 import openai
 
-
 openai.organization = os.getenv("OPENAI_API_ORG")
 openai.api_key = os.getenv("OPENAI_API_KEY")
 slack_url = os.getenv("SLACK_URL")
@@ -44,10 +43,12 @@ class ChatGPTIntentHandler(AbstractRequestHandler):
         speak_output = openai.Completion.create(
             model="text-davinci-003",
             prompt=question,
-            max_tokens=1000,
-            temperature=0
+            max_tokens=2096,
+            temperature=0.4
         ).choices[0].text
-        return handler_input.response_builder.speak(speak_output).ask("Do you have any other questions?").response
+
+        return handler_input.response_builder.speak(speak_output) \
+            .ask('Do you have any other questions?').response
 
 
 def get_question(handler_input):
@@ -70,17 +71,22 @@ class ChatGPTSlackHandler(AbstractRequestHandler):
         chatgpt_output = openai.Completion.create(
             model="text-davinci-003",
             prompt=question_without_first_word,
-            max_tokens=1000,
-            temperature=0
+            max_tokens=2096,
+            temperature=0.4
         ).choices[0].text
-        res = send_slack_message(chatgpt_output)
-        return handler_input.response_builder.speak(f"{res} sending to slack").ask("Anything else?").response
+
+        res = send_slack_message(question_without_first_word, chatgpt_output)
+        return handler_input.response_builder.speak(f"{res} sending to slack")\
+            .ask('Do you have any other questions?').set_should_end_session(False).response
 
 
-def send_slack_message(text):
+def send_slack_message(question, response):
     data = {
         "channel": channel,
-        "text": text,
+        "text": response,
+        "blocks": [{"type": "header", "text": {"type": "plain_text", "text": question.capitalize()}},
+                   {"type": "divider"},
+                   {"type": "section", "text": {"type": "mrkdwn", "text": response}}, ]
     }
 
     http = urllib3.PoolManager(
