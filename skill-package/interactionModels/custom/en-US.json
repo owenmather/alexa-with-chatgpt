@@ -25,6 +25,7 @@
           ],
           "samples": [
             "please {question}",
+            "are {question}",
             "what {question}",
             "where {question}",
             "who {question}",
@@ -43,7 +44,8 @@
             "tell {question}",
             "define {question}",
             "discuss {question}",
-            "pick {question}"
+            "pick {question}",
+            "ai {question}"
           ]
         },
         {

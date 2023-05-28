@@ -4,6 +4,19 @@ Deploys an Alexa Skill that integrates Alexa with ChatGPT
 
 Supports sending results to Slack or as Audio output
 
+## Requirements
+
+- [X] Python 3.8
+- [X] AWS Account
+- [X] OpenAI Account
+
+## Deployment
+
+ask cli automatically deploys the AWS Lambda to your configured AWS Account using the following  
+```
+ask configure
+ask deploy --ignore-hash
+```
 
 ## 🏁 Environment Variables for Lambdas
 
@@ -14,14 +27,6 @@ The following environment variables must be set in the AWS Lambda Environment
 | SLACK_URL |Incoming Webhook Url to send Slack Messages |
 | OPENAI_API_KEY | Api Key for OpenAI |
 | OPENAI_API_ORG | Organization for OpenAi |
-
-## Deployment
-
-ask cli automatically deploys the lambda to your configured AWS Account using the following  
-```
-ask configure
-ask deploy --ignore-hash
-```
 
 ## Testing Locally
 ```shell
