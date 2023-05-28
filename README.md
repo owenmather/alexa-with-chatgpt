@@ -25,11 +25,14 @@ ask deploy --ignore-hash
 
 ## Testing Locally
 ```shell
-npm install --save-dev ask-sdk-local-debug
-ask dialog --locale en-US
-> open ai 
-> What is the biggest animal ever to have lived?
-> $Response from ChatGPT
+npm install --save-dev ask-sdk-local-debug #intall ask-sdk 
+
+ask dialog --locale en-US # Start chat session with Alexa
+
+User > open ai  # open command 
+Alexa > ChatGPT here
+User > What is the biggest animal ever to have lived?
+Alexa > $Response from ChatGPT
 ```
 
 ## Querying ChatGPT
@@ -45,7 +48,7 @@ Requests for Slack messages must be prefixed with the below words from [skill.js
 > **send, message, slack**
 
 🗣 > **Alexa open ai**   
-🗣 > **slack** me the top 10 italian restaurants in Belfast  
+🗣 > **message** me what is the largest spider ever to have lived in Ireland 
 
 _output sent to slack from chatgpt_
-![img.png](img.png)
+![img_1.png](img_1.png)
