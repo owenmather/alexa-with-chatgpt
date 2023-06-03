@@ -56,4 +56,14 @@ Requests for Slack messages must be prefixed with the below words from [skill.js
 🗣 > **message** me what is the largest spider ever to have lived in Ireland 
 
 _output sent to slack from chatgpt_
-![img_1.png](img_1.png)
+![img_1.png](assets/img_1.png)
+
+### Image Generation
+
+Image generation can be triggered using the following and results sent to Slack 
+> **create, image, imagine, generate an image, generate image**
+
+🗣 > **Alexa open ai**   
+🗣 > **create** a pixel art style dog wearing a boilersuit
+
+![img.png](assets/img.png)
