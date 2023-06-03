@@ -16,7 +16,7 @@
           "samples": []
         },
         {
-          "name": "ChatGPTIntent",
+          "name": "ChatGPTPleaseIntent",
           "slots": [
             {
               "name": "question",
@@ -24,28 +24,295 @@
             }
           ],
           "samples": [
-            "please {question}",
-            "are {question}",
-            "what {question}",
-            "where {question}",
-            "who {question}",
-            "tell {question}",
-            "generate {question}",
-            "explain {question}",
-            "how {question}",
-            "when {question}",
-            "why {question}",
-            "if {question}",
-            "should {question}",
-            "will {question}",
-            "would {question}",
-            "could {question}",
-            "advise {question}",
-            "tell {question}",
-            "define {question}",
-            "discuss {question}",
-            "pick {question}",
-            "ai {question}"
+            "Please {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTAreIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Are {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTWhatIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "What {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTWhereIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Where {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTWhoIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Who {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTTellIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Tell {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTGenerateIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Generate {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTExplainIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Explain {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTHowIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "How {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTWhenIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "When {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTWhyIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Why {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTIfIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "If {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTShouldIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Should {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTWillIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Will {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTWouldIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Would {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTCouldIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Could {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTAdviseIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Advise {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTDefineIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Define {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTDiscussIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Discuss {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTPickIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Pick {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTAiIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Ai {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTYesIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Yes {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTIsIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Is {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTSoIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "So {question}"
+          ]
+        },
+        {
+          "name": "ChatGPTOkIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Ok {question}"
           ]
         },
         {
@@ -60,6 +327,22 @@
             "send {question}",
             "message {question}",
             "slack {question}"
+          ]
+        },
+        {
+          "name": "ImageHandler",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "create {question}",
+            "image {question}",
+            "imagine {question}",
+            "generate an image {question}",
+            "generate image {question}"
           ]
         },
         {
