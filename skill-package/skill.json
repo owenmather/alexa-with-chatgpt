@@ -25,13 +25,6 @@
       "testingInstructions": "Sample Testing Instructions.",
       "distributionCountries": []
     },
-    "apis": {
-      "custom": {
-        "endpoint": {
-          "uri": "arn:aws:lambda:eu-west-1:845367765229:function:ask-alexa-with-chatgpt-default-default-1685283929863"
-        }
-      }
-    },
     "manifestVersion": "1.0"
   }
 }
