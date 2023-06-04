@@ -20,13 +20,23 @@ ask deploy --ignore-hash
 
 ## 🏁 Environment Variables for Lambdas
 
-The following environment variables must be set in the AWS Lambda Environment  
+The following environment variables **must** be set in the AWS Lambda Environment  
 
 | **Name** | **Description** |
 | --- | --- | 
 | SLACK_URL |Incoming Webhook Url to send Slack Messages |
+| SLACK_CHANNEL | SLack channel to send messages to |
 | OPENAI_API_KEY | Api Key for OpenAI |
 | OPENAI_API_ORG | Organization for OpenAi |
+
+The following variables are **optional**
+
+| **Name** | **Description** |
+| --- | --- | 
+| MODEL | OpenAi Model used defaults to `text-davinci-003` |
+| TEMPERATURE | Temperature for model defaults to `0.1` |
+| MAX_TOKENS | Max Tokens for model defaults to `3000` |
+| LOGLEVEL | Level for logger defaults to `INFO` |
 
 ## Testing Locally
 ```shell
