@@ -133,7 +133,7 @@ def send_slack_message(question, response=None, image_url=None) -> str:
         data["blocks"].append({
             "type": "image",
             "image_url": image_url,
-            "alt_text": "Haunted hotel image"
+            "alt_text": question.capitalize()
         })
 
         http = urllib3.PoolManager(
